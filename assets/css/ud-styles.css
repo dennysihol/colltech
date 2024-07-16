@@ -216,10 +216,9 @@ p {
 .sticky {
   position: fixed;
   z-index: 99;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+  padding-top: 0px;
 }
 
 .sticky .navbar {
@@ -507,7 +506,7 @@ p {
   background: var(--primary-color);
   background-image: url('/assets/images/banner/home\ banner\ 1.png');
   background-size: 100% 100%;
-  padding-top: 180px;
+  padding-top: 120px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -784,7 +783,7 @@ p {
 
 /* ===== About CSS ===== */
 .ud-about {
-  background: #f3f4fe;
+  background: #0087FF;
   padding: 120px 0;
 }
 
@@ -795,14 +794,13 @@ p {
 }
 
 .ud-about-wrapper {
-  background: var(--white);
-  border: 1px solid rgba(0, 0, 0, 0.08);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: space-evenly;
+          margin: 3%;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
@@ -812,7 +810,7 @@ p {
 }
 
 .ud-about-content-wrapper {
-  padding: 70px;
+  padding: 50px;
 }
 
 @media (max-width: 767px) {
@@ -846,12 +844,14 @@ p {
   font-size: 36px;
   line-height: 45px;
   margin-bottom: 30px;
+  color: #FFF;
 }
 
 @media (max-width: 767px) {
   .ud-about-content h2 {
     font-size: 26px;
     line-height: 38px;
+    color: #FFF;
   }
 }
 
@@ -859,6 +859,7 @@ p {
   font-size: 16px;
   line-height: 28px;
   margin-bottom: 40px;
+  color: #FFF;
 }
 
 .ud-about-content .ud-main-btn:hover {
