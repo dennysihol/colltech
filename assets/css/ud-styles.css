@@ -518,7 +518,8 @@ p {
 .ud-hero {
   background: var(--primary-color);
   background-image: url("/assets/images/banner/home\ banner\ 1.png");
-  background-size: 100% 100%;
+  background-size:cover;
+  background-position: center center;
   padding-top: 120px;
 }
 
@@ -530,9 +531,12 @@ p {
 
 @media (max-width: 767px) {
   .ud-hero {
-    padding-top: 130px;
+    padding-top: 130px;    
+    background-image: url("/assets/images/banner/mobile\ banner.png");
+    background-position: center center;
   }
 }
+
 
 .ud-hero-content {
   margin-top: 150px;
@@ -568,7 +572,7 @@ p {
   font-size: 20px;
   line-height: 35px;
   text-align: left;
-  color: #2b2b2b;
+  color: black;
   opacity: 0.8;
   margin: auto;
   margin-bottom: 200px;
@@ -578,6 +582,7 @@ p {
   .ud-hero-content .ud-hero-desc {
     font-size: 16px;
     line-height: 30px;
+    color: black;
   }
 }
 
@@ -899,10 +904,27 @@ p {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
+.ud-about-image{
+  height: 600px;
+  border-radius: 4%; 
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .ud-about-image{
+    height: 600px;
+    border-radius: 4%; 
+    overflow: hidden;
+  }
+}
+
+
 @media only screen and (min-width: 768px) and (max-width: 991px),
   (max-width: 767px) {
   .ud-about-image {
-    text-align: center;
+    height: 600px;
+  border-radius: 4%; 
+  overflow: hidden;
   }
 }
 
@@ -1047,30 +1069,30 @@ p {
   background: var(--heading-color);
 }
 
-/* ===== FAQ CSS ===== */
-.ud-faq {
-  padding-top: 120px;
-  padding-bottom: 90px;
-  background: #f3f4fe;
+/* ===== client CSS ===== */
+.ud-client {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background: #F6FBFF;
   position: relative;
   z-index: 1;
 }
 
 @media (max-width: 767px) {
-  .ud-faq {
+  .ud-client {
     padding-top: 80px;
     padding-bottom: 50px;
   }
 }
 
-.ud-faq .shape {
+.ud-client .shape {
   position: absolute;
   z-index: -1;
   left: 0;
   bottom: 0;
 }
 
-.ud-single-faq {
+.ud-single-client {
   background: var(--white);
   border: 1px solid #f3f4fe;
   -webkit-box-shadow: 0px 20px 95px rgba(201, 203, 204, 0.3);
@@ -1079,7 +1101,7 @@ p {
   margin-bottom: 30px;
 }
 
-.ud-single-faq .ud-faq-btn {
+.ud-single-client .ud-client-btn {
   text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1099,17 +1121,17 @@ p {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px),
   (max-width: 767px) {
-  .ud-single-faq .ud-faq-btn {
+  .ud-single-client .ud-client-btn {
     padding: 15px;
   }
 }
 
-.ud-single-faq .ud-faq-btn.collapsed span.icon i {
+.ud-single-client .ud-client-btn.collapsed span.icon i {
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.ud-single-faq .ud-faq-btn span.icon {
+.ud-single-client .ud-client-btn span.icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1127,7 +1149,7 @@ p {
   margin-right: 24px;
 }
 
-.ud-single-faq .ud-faq-btn span.icon i {
+.ud-single-client .ud-client-btn span.icon i {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
   -webkit-transition: all 0.3s;
@@ -1136,13 +1158,13 @@ p {
   font-weight: 700;
 }
 
-.ud-single-faq .ud-faq-body {
+.ud-single-client .ud-client-body {
   padding: 0px 30px 40px 95px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px),
   (max-width: 767px) {
-  .ud-single-faq .ud-faq-body {
+  .ud-single-client .ud-client-body {
     padding: 0px 16px 20px 82px;
   }
 }
@@ -1285,6 +1307,14 @@ p {
   height: 170px;
   position: relative;
   margin: 0px auto 25px;
+}
+
+.ud-client-image-wrapper {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ud-single-team .ud-team-image {
@@ -1521,7 +1551,7 @@ p {
 
 /* ===== Footer CSS ===== */
 .ud-footer {
-  background: var(--heading-color);
+  background: #0087FF;
   padding-top: 100px;
   position: relative;
   z-index: 1;
@@ -1550,6 +1580,12 @@ p {
 
 .ud-widget {
   margin-bottom: 50px;
+}
+
+.ud-widget-logo {
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .ud-widget .ud-footer-logo {
@@ -1634,6 +1670,7 @@ p {
 }
 
 .ud-footer-bottom {
+  background-color: #0060B5;
   padding: 35px 0;
   border-top: 1px solid rgba(136, 144, 164, 0.43);
 }
@@ -1674,7 +1711,7 @@ p {
 }
 
 .ud-footer-bottom .ud-footer-bottom-right {
-  text-align: right;
+  text-align: center;
   font-weight: normal;
   font-size: 15px;
   color: #f3f4fe;
