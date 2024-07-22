@@ -354,7 +354,7 @@ p {
   (max-width: 767px) {
   .navbar-nav .nav-item > a:hover,
   .navbar-nav .nav-item > a.active {
-    color: var(--primary-color);
+    color: #0087ff;
     opacity: 1;
   }
 }
@@ -403,7 +403,7 @@ p {
 }
 
 .navbar-nav .nav-item:hover > a {
-  color: var(--white);
+  color: #0087ff;
   opacity: 0.5;
 }
 
