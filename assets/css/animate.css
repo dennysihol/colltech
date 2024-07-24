@@ -132,6 +132,7 @@
   animation-name: fadeInRight;
 }
 
+
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
