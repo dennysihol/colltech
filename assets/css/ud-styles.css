@@ -1001,6 +1001,23 @@ p {
   }
 }
 
+@media (max-width: 767px) {
+  .ud-alur-card {
+    margin-bottom: 15px;
+  }
+}
+
+.ud-card-alur {
+  margin-top: 20px
+}
+
+@media (max-width: 767px) {
+  .ud-card-alur {
+    margin-top: 0px
+  }
+}
+
+
 .ud-single-service {
   margin-bottom: 40px;
   background: var(--white);
